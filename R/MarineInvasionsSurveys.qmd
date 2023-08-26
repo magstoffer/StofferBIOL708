@@ -1,26 +1,17 @@
 ---
-title: "Marine Invasions Surveys MB CI"
+title: "Surveying Non-Indigenous Species in Marine Proected Areas on the California Coast"
 format: pdf
 editor: visual
 ---
 
-## Quarto
+## Surveying Non-Indigenous Species in Marine Protected Areas on the California Coast
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+### Maggie Stoffer
 
-## Running Code
+Github hyperlink: <https://github.com/magstoffer/StofferBIOL708>
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+#### Introduction to Research Topic
 
-```{r}
-1 + 1
-```
+My research project will focus on developing survey methods for epifaunal invasive species in several marine protected areas in the state of California, specifically around Monterey Bay and the Channel Islands. Such research is part of SERC\'s ongoing execution of various standardized surveys to monitor non-indigenous species occurrences in estuarine and coastal waters throughout California in partnership with the California Department of Fish and Wildlife. Marine protected areas are specifically important to study, as they are known to be beneficial to marine biodiversity, but their ability to provide protection from invasive species remains largely unknown
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+The methodology I will utilize in this project involves sampling along a transect and/or gradient from within a marine protected area to some distance outside the protected area. I will place standardized polyvinyl chloride (PVC) settling plates for a specific amount of time along the gradient/transect then test for invasion prevalence. I will utilize a combination of traditional morphological species identification as well as molecular metagenetic species determinations in these surveys. I will also gather physical environmental data such as salinity and water temperature. 
