@@ -1,5 +1,7 @@
 ---
 title: "Surveying Non-Indigenous Species in Marine Proected Areas on the California Coast"
+author:"Maggie Stoffer"
+date: "8/25/2023"
 format: pdf
 editor: visual
 ---
@@ -8,10 +10,12 @@ editor: visual
 
 ### Maggie Stoffer
 
+##### August 25, 2023
+
 Github hyperlink: <https://github.com/magstoffer/StofferBIOL708>
 
 #### Introduction to Research Topic
 
-My research project will focus on developing survey methods for epifaunal invasive species in several marine protected areas in the state of California, specifically around Monterey Bay and the Channel Islands. Such research is part of SERC\'s ongoing execution of various standardized surveys to monitor non-indigenous species occurrences in estuarine and coastal waters throughout California in partnership with the California Department of Fish and Wildlife. Marine protected areas are specifically important to study, as they are known to be beneficial to marine biodiversity, but their ability to provide protection from invasive species remains largely unknown
+My research project will focus on developing survey methods for epifaunal invasive species in several marine protected areas in the state of California, specifically around Monterey Bay and the Channel Islands. Such research is part of SERC's ongoing execution of various standardized surveys to monitor non-indigenous species occurrences in estuarine and coastal waters throughout California in partnership with the California Department of Fish and Wildlife. Marine protected areas are specifically important to study, as they are known to be beneficial to marine biodiversity, but their ability to provide protection from invasive species remains largely unknown
 
 The methodology I will utilize in this project involves sampling along a transect and/or gradient from within a marine protected area to some distance outside the protected area. I will place standardized polyvinyl chloride (PVC) settling plates for a specific amount of time along the gradient/transect then test for invasion prevalence. I will utilize a combination of traditional morphological species identification as well as molecular metagenetic species determinations in these surveys. I will also gather physical environmental data such as salinity and water temperature. 
