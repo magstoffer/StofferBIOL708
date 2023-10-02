@@ -1,0 +1,5 @@
+"0","ggplot(data=ca) +"
+"0","  geom_point(aes(x=year, y=visitors, color=park_name))+"
+"0","  labs (x= ""Year"", y= ""Visitation"", title= ""California National Parks Visitation"")+"
+"0","  theme_cowplot() +"
+"0","    theme(legend.title=element_blank())"

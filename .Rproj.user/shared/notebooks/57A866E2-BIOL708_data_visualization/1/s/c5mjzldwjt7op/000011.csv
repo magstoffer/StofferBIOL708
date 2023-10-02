@@ -1,0 +1,50 @@
+"0","#National Parks in California"
+"0","ca <- read_csv(""https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/ca.csv"") "
+"2","[1mRows: [22m[34m789[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (5): region, state, code, park_name, type
+[32mdbl[39m (2): visitors, year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","#Acadia National Park"
+"0","acadia <- read_csv(""https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/acadia.csv"")"
+"2","[1mRows: [22m[34m98[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (5): region, state, code, park_name, type
+[32mdbl[39m (2): visitors, year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","#Southeast US National Parks"
+"0","se <- read_csv(""https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/se.csv"")"
+"2","[1mRows: [22m[34m453[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (5): region, state, code, park_name, type
+[32mdbl[39m (2): visitors, year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","#2016 Visitation for all Pacific West National Parks"
+"0","visit_16 <- read_csv(""https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/visit_16.csv"")"
+"2","[1mRows: [22m[34m17[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (5): region, state, code, park_name, type
+[32mdbl[39m (2): visitors, year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","#All Nationally designated sites in Massachusetts"
+"0","mass <- read_csv(""https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/mass.csv"")"
+"2","[1mRows: [22m[34m13[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (5): region, state, code, park_name, type
+[32mdbl[39m (2): visitors, year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."

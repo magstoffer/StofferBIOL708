@@ -1,0 +1,96 @@
+---
+title: "BIOL708_data_visualization"
+author: "Maggie Stoffer"
+format: html
+editor: visual
+---
+
+## Practicing Data Visualization Running Code
+
+### Installing the Here Package 
+
+```{r}
+install.packages ("here")
+library(here)
+
+## Relative vs. absolutle filepaths --> absolute is what i have been using w/ readxl, but relative using the here package allows for open science/reproducable science
+
+"filename<-readxl(here('foldername', 'filename'))"
+
+
+```
+
+### Installing tidyverse and ggplot2
+
+```{r}
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages ("cowplot")
+
+library(tidyverse)
+library(readr)
+library (ggplot2)
+library(cowplot)
+```
+
+### Loading the data 
+
+```{r}
+#National Parks in California
+ca <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/ca.csv") 
+
+#Acadia National Park
+acadia <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/acadia.csv")
+
+#Southeast US National Parks
+se <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/se.csv")
+
+#2016 Visitation for all Pacific West National Parks
+visit_16 <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/visit_16.csv")
+
+#All Nationally designated sites in Massachusetts
+mass <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/mass.csv")
+```
+
+### Looking at the data 
+
+```{r}
+head(ca)
+```
+
+### Building a plot 
+
+```{r}
+ggplot(data=ca) +
+  geom_point(aes(x=year, y=visitors))+
+  theme_cowplot()
+```
+
+```{r}
+ggplot(data=ca) +
+  geom_point(aes(x=year, y=visitors, color=park_name))+
+  labs (x= "Year", y= "Visitation", title= "California National Parks Visitation")+
+  theme_cowplot() +
+    theme(legend.title=element_blank())
+```
+
+### Southeast Visualizations
+
+```{r}
+# Plot 1: Scatterplot showing visitation to all national SE Parks w/ color identifying parks 
+ggplot(data=se) +
+  geom_point(aes(x=year, y=visitors, color=park_name))+
+  labs (x= "Year", y= "Visitation", title= "Southeast National Parks Visitation")+
+  theme_cowplot() +
+    theme(legend.title=element_blank())
+
+```
+
+```{r}
+# Plot 2: Scatterpot shwoing visitation to all national SE parks w/ color identifying state
+ggplot(data=se) +
+  geom_point(aes(x=year, y=visitors, color=park_name))+
+  labs (x= "Year", y= "Visitation", title= "Southeast National Parks Visitation")+
+  theme_cowplot() +
+    theme(legend.title=element_blank())
+```
