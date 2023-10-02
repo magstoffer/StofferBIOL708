@@ -87,10 +87,62 @@ ggplot(data=se) +
 ```
 
 ```{r}
-# Plot 2: Scatterpot shwoing visitation to all national SE parks w/ color identifying state
+# Plot 2: Scatterpot shwoing visitation to all national SE parks w/ color identifying state and 45 degree tilt to x axis
 ggplot(data=se) +
-  geom_point(aes(x=year, y=visitors, color=park_name))+
-  labs (x= "Year", y= "Visitation", title= "Southeast National Parks Visitation")+
+  geom_point(aes(x=year, y=visitors, color=state))+
+  labs (x= "Year", y= "Visitation", title= "Southeast National Parks Visitation by State")+
   theme_cowplot() +
-    theme(legend.title=element_blank())
+    theme(legend.title=element_blank(), axis.text.x= element_text(angle=45, vjust=1, hjust=1, size=12))
+```
+
+### Faceting 
+
+```{r}
+ ggplot(data = se) +
+     geom_point(aes(x = year, y = visitors)) +
+     facet_wrap(~ state) +
+   theme_cowplot ()
+```
+
+```{r}
+ ggplot(data = se) +
+     geom_point(aes(x = year, y = visitors)) +
+     facet_wrap(~ state, scales = "free")
+```
+
+### Exploring Geoms
+
+```{r}
+ggplot(data = se) + 
+  geom_jitter(aes(x = park_name, y = visitors, color = park_name), 
+              width = 0.1, 
+              alpha = 0.4) +
+  coord_flip() +
+  theme(legend.position = "none") 
+
+```
+
+```{r}
+ggplot(se, aes(x = park_name, y = visitors)) + 
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+ggplot(se, aes(x = year, y = visitors, color = park_name)) +
+   geom_line()+
+  geom_point()+
+  theme_cowplot()
+
+```
+
+```{r}
+ggplot(data = acadia) + 
+  geom_point(aes(x = year, y = visitors)) +
+  geom_line(aes(x = year, y = visitors)) +
+  geom_smooth(aes(x = year, y = visitors)) +
+  labs(title = "Acadia National Park Visitation",
+       y = "Visitation",
+       x = "Year") +
+  theme_bw()
 ```

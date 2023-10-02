@@ -1,0 +1,8 @@
+"0","ggplot(data = acadia) + "
+"0","  geom_point(aes(x = year, y = visitors)) +"
+"0","  geom_line(aes(x = year, y = visitors)) +"
+"0","  geom_smooth(aes(x = year, y = visitors)) +"
+"0","  labs(title = ""Acadia National Park Visitation"","
+"0","       y = ""Visitation"","
+"0","       x = ""Year"") +"
+"0","  theme_bw()"

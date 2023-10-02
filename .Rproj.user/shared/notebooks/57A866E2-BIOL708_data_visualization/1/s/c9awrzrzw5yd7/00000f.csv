@@ -1,0 +1,6 @@
+"0","ggplot(data = se) + "
+"0","  geom_jitter(aes(x = park_name, y = visitors, color = park_name), "
+"0","              width = 0.1, "
+"0","              alpha = 0.4) +"
+"0","  coord_flip() +"
+"0","  theme(legend.position = ""none"") "
